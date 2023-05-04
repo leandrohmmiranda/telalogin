@@ -9,65 +9,76 @@
     <link rel="stylesheet" href="login.style.css">
 
 <body>
-    <input style="display:none;" name="62A52B6B-4600-4a8d-A1E0-EB8A811D9D60" />
-
-    <div id="studioContent">
-        <div id="studioPageContent">
-            <div class="studioTopNavigationPanel clearFix">
-                <div class="systemSection mainPageLayout clearFix">
-                </div>
+    <h1 class="title">Seja bem vindo a tela de Login!</h1>
+    <div class="header headerLightBig clearFix">
+        <img class="logo" src="/img/logo.png" alt="" />
+    </div>
+    <p>Acesso ao Sistema</p>
+    <!-- Formulario de login -->
+    <div>
+        <form action="">
+            <div>
+                <div class="title">CPF</div>
+                <div><input maxlength="64" class="pwdLoginTextbox" type="text" id="login" name="login" required /></div>
             </div>
-
-            <div class="mainPageLayout">
-                <div id="studio_sidePanelUpHeight20" style="height: 20px;"></div>
-                <div class="clearFix">
-                    <div class="topMargin"></div>
-                    <div class="mainContainer clearFix">
-                        <div style="margin-bottom: 10px">
-                            <div id="GreetingBlock" class="authForm">
-                                <div class="header headerLightBig clearFix">
-                                    <img class="logo" src="/img/logo.png" alt="" />
-
-                                    <h1 class="title">Seja bem Vindo!</h1>
-                                </div>
-
-                                <div id="authForm">
-                                    <div id="authMessage"></div>
-
-                                    <div id="ctl00_ctl00_PageContent_StudioPageContent__AuthByEmail" class="login">
-                                        <div class="title">O e-mail que você usou para se registrar no portal:</div>
-                                        <input maxlength="64" class="pwdLoginTextbox" type="text" id="login" name="login" required />
-                                    </div>
-
-                                    <div class="password">
-                                        <div class="title">Senha:</div>
-                                        <input maxlength="64" class="pwdLoginTextbox" type="password" id="pwd" name="pwd" required />
-                                    </div>
-
-                                    <div class="subtext">
-                                        <span class="pseudolink" onclick="AuthManager.ShowPwdReminderDialog()">Esqueceu sua senha?</span>
-                                    </div>
-
-                                    <div class="submenu clearFix">
-                                        <div class="loginBlock clearFix">
-                                            <div style="float: left;">
-                                                <input class="highLinkButton signIn" id="loginButton" type="submit" value="Login" />
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="studio_sidePanel" class="studioRightSidePanel" style="display:none;"></div>
-                </div>
-
-                <div id="container" style="position: absolute; top: 0px; left: 0px;"></div>
-                <div id="fullScreen" style="margin: 0; padding: 0;"></div>
+            <div>
+                <div class="title">Senha</div>
+                <div><input maxlength="64" class="pwdLoginTextbox" type="password" id="pwd" name="pwd" required /></div>
             </div>
-        </div>
+            <div>
+                <div><span class="pseudolink" onclick="AuthManager.ShowPwdReminderDialog()">Esqueceu sua senha? Clique aqui!</span></div>
+                <div><input class="highLinkButton signIn" id="loginButton" type="submit" value="Entrar" /></div>
+            </div>
+            <!-- Primeiro acesso? Clique aqui! -->
+            <!-- captcha -->
+            <!-- Área reservada para mensagens
+                O infoconsig melhorou, agora você utiliza o número do seu CPF para acessar o sistema, com a mesma senha cadastrada anteriormente.
+            -->
+            <!-- Área reservada para avisos
+                Importante:
+                Se você já cadastrou sua senha no APP infoconsig, utilize a mesma para seu acesso aqui!-->
+
+            <!-- Proxima tela de cadastro de dados de validacao -->
+            <!-- Data de nascimento -->
+            <!-- Matricula -->
+            <!-- botao continuar -->
+            <!-- avisos -->
+
+            <!-- Proxima tela de cadastro do celular e do e-mail -->
+            <!-- Celular -->
+            <!-- E-mail -->
+            <!-- botao continuar -->
+            <!-- avisos -->
+
+            <!-- Proxima tela de validação email -->
+            <!-- Primeiro acesso > Cadastro > Confirmação do e-mail -->
+            <!-- Enviamos um código para o e-mail que você informou. Digite abaixo o codígo recebbido. -->
+            <!-- 6 campos para inserir o codigo -->
+            <!-- botao Validar e-mail -->
+            <!-- Reenviar código (60sg) -->
+            <!-- Atenção! Se não recebeu o token, verifique se o e-mail informado está correto. -->
+            <!-- avisos -->
+
+            <!-- Proxima tela de cadastro de senha -->
+            <!-- Primeiro acesso > Cadastro > Senha -->
+            <!-- Quase lá! Só falta criar sua senha -->
+            <!-- Contendo no minímo 8 caracteres -->
+            <!-- Com pelo menos três dos seguintes:
+                *Letras maiúsculas
+                *Letras minúsculas
+                *Caracteres especiais -->
+            <!-- Senha -->
+            <!-- Confirme a senha -->
+            <!-- botao Continuar -->
+            <!-- avisos -->
+
+            <!-- Proxima tela de Recuperação de senha -->
+            <!-- Esqueci minha Senha -->
+            <!-- Opção 1: Esqueci minha senha -->
+            <!-- Opção 2: Esqueci meu e-mail cadastrado para recuperação de senha -->
+            <!-- Opção 3: Desejo cadastrar novo e-mail para recuperação de senha -->
+            <!-- Voltar a tela anterior -->
+        </form>
     </div>
 
     <div id="studioFooter">
