@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
 <body>
     <!-- Logo -->
     <header>
-        <img class="logo" src="img/logo.png">
+        <img class="logo" src="../img/logo.png">
         <h2>Acesso ao Sistema</h2>
     </header>
     <main>
@@ -61,7 +61,7 @@
     <script>
         function refreshCaptcha() {
             var captchaImage = document.getElementById('captchaImage');
-            captchaImage.src = 'captcha.php?' + new Date().getTime();
+            captchaImage.src = '../captcha.php?' + new Date().getTime();
         }
 
         function authenticateUser() {
