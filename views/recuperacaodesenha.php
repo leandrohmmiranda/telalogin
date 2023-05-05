@@ -1,6 +1,3 @@
-<?php
-include 'template.php';
-?>
 <h1>Recuperação de Senha</h1>
 <p>Escolha uma das opções abaixo:</p>
 
@@ -11,3 +8,6 @@ include 'template.php';
 </div>
 
 <button onclick="history.go(-1)">Voltar à tela anterior</button>
+<?php
+include 'template.php';
+?>

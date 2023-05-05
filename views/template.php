@@ -5,18 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.style.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+    <!-- Logo -->
     <header>
-        <div class="header headerLightBig clearFix">
-            <img class="logo" src="img/logo.png" alt="Logo">
+        <div class="col-sx-12">
+            <img class="logo" src="img/logo.png">
         </div>
     </header>
 
     <!-- Conteúdo da página -->
-    <div class="content">
+    <div class="row">
+        <div class="content">
+        </div>
     </div>
 
     <!-- Mensagens -->

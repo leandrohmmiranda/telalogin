@@ -1,7 +1,3 @@
-<?php
-include 'template.php';
-?>
-
 <main>
     <section>
         <h2>Acesso ao Sistema</h2>
@@ -9,11 +5,11 @@ include 'template.php';
         <form onsubmit="event.preventDefault(); authenticateUser()">
             <div>
                 <label for="login">CPF:</label>
-                <input maxlength="64" class="pwdLoginTextbox" type="text" id="login" name="login" required />
+                <input maxlength="64" class="pwdLoginTextbox" type="text" id="login" name="login" placeholder="CPF" required />
             </div>
             <div>
                 <label for="pwd">Senha:</label>
-                <input maxlength="64" class="pwdLoginTextbox" type="password" id="pwd" name="pwd" required />
+                <input maxlength="64" class="pwdLoginTextbox" type="password" id="pwd" name="pwd" placeholder="Senha" required />
             </div>
             <div>
                 <span class="pseudolink" onclick="AuthManager.ShowPwdReminderDialog()">Esqueceu sua senha? Clique
@@ -25,7 +21,7 @@ include 'template.php';
         </form>
     </section>
 </main>
-<p>Primeiro acesso? <a href="pagina_de_registro.php">Clique aqui!</a></p>
+<p>Primeiro acesso? <a href="validacao.php">Clique aqui!</a></p>
 <!-- captcha -->
 <div class="captcha-container">
     <input type="text" id="captchaInput" placeholder="Digite o texto acima" required>
@@ -53,3 +49,6 @@ include 'template.php';
 </body>
 
 </html>
+<?php
+include 'template.php';
+?>
