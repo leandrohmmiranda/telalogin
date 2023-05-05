@@ -1,32 +1,44 @@
-body {
-    background-color: #255471;
-    color: #fff;
+.h1 {
+    color: red;
 }
 
-.header {
+.h2 {
+    color: red;
+}
+
+body {
+    background-color: #255471;
+    color: #e40000;
+}
+
+header {
     background-color: #255471;
 }
 
 .logo {
-    height: 10px;
-    width: 10px;
+    height: 100px;
+    width: 100px;
     display: flex;
 }
 
 .content {
-    height: 10px;
-    width: 10px;
-    display: flex;}
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
 
 .message-text {
-    height: 10px;
-    width: 10px;
-    display: flex;}
+    color: #255471;
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
 
 .warning-text {
-    height: 10px;
-    width: 10px;
-    display: flex;}
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
 
 #studioFooter {
     background-color: #255471;
@@ -34,27 +46,19 @@ body {
 }
 
 .footerCopyright {
-    height: 10px;
-    width: 10px;
+    height: 100px;
+    width: 100px;
     display: flex;
 }
 
-.pwdLoginTextbox{
-    height: 10px;
-    width: 10px;
+.pwdLoginTextbox {
+    height: 100px;
+    width: 100px;
     display: flex;
 }
 
 .popup {
-      display: none;
-      position: fixed;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 300px;
-      padding: 20px;
-      background: #fff;
-      border: 1px solid #ccc;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      z-index: 9999;
-    }
+    display: none;
+    position: fixed;
+    left: 50%;
+}
