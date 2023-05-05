@@ -10,7 +10,7 @@
         <input type="text" id="codigo6" name="codigo6" maxlength="1" required>
     </div>
     <div>
-        <button type="submit">Validar E-mail</button>
+        <button type="submit" onclick="window.location.href = 'cadastrosenha.php'">Validar E-mail</button>
     </div>
 </form>
 
@@ -40,6 +40,62 @@
         return minutes.toString().padStart(2, "0") + ":" + seconds.toString().padStart(2, "0");
     }
 </script>
+
 <?php
 include 'template.php';
+?>
+
+<?php
+// Função para gerar um código aleatório
+function gerarCodigo()
+{
+    $caracteres = '0123456789';
+    $tamanho = 6;
+    $codigo = '';
+
+    for ($i = 0; $i < $tamanho; $i++) {
+        $codigo .= $caracteres[rand(0, strlen($caracteres) - 1)];
+    }
+
+    return $codigo;
+}
+
+// Verificar se o formulário foi enviado
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Recuperar o código digitado pelo usuário
+    $codigo = $_POST['codigo1'] . $_POST['codigo2'] . $_POST['codigo3'] . $_POST['codigo4'] . $_POST['codigo5'] . $_POST['codigo6'];
+
+    // Verificar se o código está correto (você precisa implementar a lógica de validação)
+    if ($codigo === "123456") { // Exemplo: código correto é "123456"
+        // Código válido, redirecionar o usuário para a página de cadastro/senha
+        header("Location: cadastrosenha.php");
+        exit();
+    } else {
+        // Código inválido, redirecionar o usuário de volta para a página de confirmação com uma mensagem de erro
+        header("Location: confirmacaoemail.php?error=1");
+        exit();
+    }
+} else {
+    // Verificar se a página foi acessada com um código expirado
+    $codigoExpirado = isset($_GET['expired']) && $_GET['expired'] === '1';
+
+    if ($codigoExpirado) {
+        // Código expirado, enviar um novo código para o e-mail do usuário
+        $novoCodigo = gerarCodigo();
+
+        // Código para enviar o e-mail com o novo código (você precisa configurar a função de envio de e-mail corretamente)
+        $emailUsuario = 'exemplo@email.com';
+        $assunto = 'Novo Código de Confirmação de E-mail';
+        $mensagem = 'Seu novo código de confirmação é: ' . $novoCodigo;
+
+        // Envie o e-mail usando a função de envio de e-mail adequada
+        // mail($emailUsuario, $assunto, $mensagem);
+
+        // Armazene o novo código no banco de dados ou em uma sessão para posterior validação
+    }
+
+    // Redirecione o usuário de volta para a página de confirmação
+    header("Location: confirmacaoemail.php");
+    exit();
+}
 ?>

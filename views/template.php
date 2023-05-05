@@ -13,7 +13,7 @@
     <!-- Logo -->
     <header>
         <div class="col-sx-12">
-            <img class="logo" src="img/logo.png">
+            <img class="logo" src="telalogin/img/logo.png">
         </div>
     </header>
 
@@ -35,9 +35,7 @@
 
     <div id="studioFooter">
         <div class="mainPageLayout">
-            <span class="footerCopyright">&copy; Sttórico Sistemas
-                <?php echo date("Y") ?>
-            </span>
+            <span class="footerCopyright">&copy; Sttórico Sistemas 2023</span>
         </div>
     </div>
 </body>
