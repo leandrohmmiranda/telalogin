@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <!-- <? echo $Form->openForm("frmLogin", null, "post", 'autocomplete="off"'); ?> -->
     <input style="display:none;" name="" />
 
     <div id="studioContent">
@@ -72,7 +71,7 @@
                             <div id="fullScreen" style="margin: 0; padding: 0;"></div>
 
                             <!-- captcha -->
-                            <div class="captcha-container">
+                            <div class="captcha">
                                 <input type="text" id="captchaInput" placeholder="Digite o texto acima" required>
                                 <img id="captchaImage" src="captcha.php" alt="Captcha Image">
                             </div>

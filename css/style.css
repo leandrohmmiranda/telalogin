@@ -1,24 +1,3 @@
-/* .studioTopNavigationPanel{}
-.systemSection{}
-.mainPageLayout{}
-.clearFix{}
-.topMargin{}
-.authForm{}
-.header{} 
-.headerLightBig
-.pwdLoginTextbox{}
-.password{}
-.subtext{}
-.pseudolink{}
-.submenu{}
-.loginBlock{}
-.highLinkButton{} 
-.signIn
-.studioRightSidePanel{}
-.captcha{}
-.footerCopyright{} */
-
-
 :root{
 	--cem-porcento: 100%;
 
@@ -172,8 +151,8 @@ img.logo{
 		color: #fff;
 	}
 	
-/* Captchas
-----------------------------------------------------------------------------------------------------*/
+	/* Captchas
+	----------------------------------------------------------------------------------------------------*/
 	.cx_captcha{
 		clear: both;
 	}
@@ -195,34 +174,181 @@ img.logo{
 		font-size: 16px;
 		font-weight: bold; 
 	}		
+	/* Define a aparência do captcha */
+	.captcha {
+	  display: inline-block;
+	  vertical-align: middle;
+	  border: 1px solid #ccc;
+	  border-radius: 5px;
+	  padding: 10px;
+	}
 /* end Captchas
 ----------------------------------------------------------------------------------------------------*/
 	
 /* mensagens e avisos
 ----------------------------------------------------------------------------------------------------*/
 .message-text {
-    align-content: center;
-    background-color: rgb(255, 255, 138);
-    border-radius: 50px;
-    height: 100px;
-    width: 500px;
-    display: flex;
+  background-color: yellow;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
 }
 
 .warning-text {
-    align-content: center;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50px;
-    height: 100px;
-    width: 500px;
-    display: flex;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  border-bottom: 2px solid black;
 }
+
 /* end mensagens e avisos
 ----------------------------------------------------------------------------------------------------*/
 
-	#loginButton{
-		transition: 0.2s linear;
-		padding: 11px 12px;
+/* Define a aparência do painel de navegação no topo do site */
+.studioTopNavigationPanel {
+  background-color: #333;
+  color: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Define a aparência de uma seção do sistema */
+.systemSection {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Define a aparência do layout da página principal */
+.mainPageLayout {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Limpa os elementos flutuantes anteriores */
+.clearFix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Define a margem superior */
+.topMargin {
+  margin-top: 20px;
+}
+
+/* Define a aparência do formulário de autenticação */
+.authForm {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Define a aparência do cabeçalho da página */
+.header {
+  background-color: #333;
+  color: #fff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Define a aparência de um cabeçalho grande com cor clara */
+.headerLightBig {
+  background-color: #f5f5f5;
+  color: #333;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Define a aparência de um campo de texto de login de senha */
+.pwdLoginTextbox {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Define a aparência da senha */
+.password {
+  font-weight: bold;
+  color: #f00;
+}
+
+/* Define a aparência de um subtexto */
+.subtext {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Define a aparência de um link pseudo */
+.pseudolink {
+  color: #06f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Define a aparência de um submenu */
+.submenu {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Define a aparência do bloco de login */
+.loginBlock {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Define a aparência de um botão de link de alta prioridade */
+.highLinkButton {
+  background-color: #06f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Define a aparência de um botão de login */
+.signIn {
+  background-color: #06f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Define a aparência do painel direito do estúdio */
+.studioRightSidePanel {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/*  */
+#loginButton{
+	transition: 0.2s linear;
+	padding: 11px 12px;
 		width: var(--cem-porcento);
 		font-size: 1.4em;
 		text-transform: none;
@@ -230,22 +356,22 @@ img.logo{
 		border-radius: 50px;
 		
 	}
-
+	
 	.baseLinkButton{
 		background-color: #1384AD; /* Nova cor do botão e bordas arredondas / New color to button and rounded border  */
 		border-radius: 50px;
 		padding: 8px 16px;
 	}
-
+	
 	#loginButton:hover,
 	.baseLinkButton:hover {
 		background-color: #255471; /* Nova cor do hover do botão / New hover color to button */
 	}
-
+	
 	#conteudo{
 		min-height: 863px;
 	}
-
+	
 	/* moldal */
 	#msg_process_report .fundo{
 		width: var(--cem-porcento);
@@ -254,27 +380,36 @@ img.logo{
 		opacity: 0.3;
 		z-index: 9998;
 	}
-		#msg_process_report .loading{
-			text-align: center;
-			margin-top: -100px;
-			margin-left: -100px;
-			left: 50%;
-			top: 40%;
-			width: 200px;
-			height: 200px;
-			background-color: #fff;
-			font-size: 15px;
-		}
-			#msg_process_report .loading img{
-				width: 70%;
-			}
-		#msg_process_report .fundo,
-		#msg_process_report .loading{
-			position: fixed;
-		}
-
+	#msg_process_report .loading{
+		text-align: center;
+		margin-top: -100px;
+		margin-left: -100px;
+		left: 50%;
+		top: 40%;
+		width: 200px;
+		height: 200px;
+		background-color: #fff;
+		font-size: 15px;
+	}
+	#msg_process_report .loading img{
+		width: 70%;
+	}
+	#msg_process_report .fundo,
+	#msg_process_report .loading{
+		position: fixed;
+	}
+	
 	/* Footer / Rodapé
-----------------------------------------------------------------------------------------------------*/
+	----------------------------------------------------------------------------------------------------*/
+	/* Define a aparência do rodapé do site */
+	.footerCopyright {
+	  background-color: #333;
+	  color: #fff;
+	  height: 60px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
 	#footer{
 		padding: 0 15px;
 		width: var(--cem-porcento);
@@ -282,30 +417,30 @@ img.logo{
 		background-color: #1384AD; /* Nova cor de fundo / New background color */
 		color: #fff;
 	}
-		#footer .atendimento,
-		#footer .atendimento2{
-			padding-top: 30px;
-			padding-left: 10px;
-			width: 200px;
-			height: 90px;
-			font-size: 0.95em;
-		}
-		#footer .atendimento2{
-			width: 170px;
-		}
-		#footer a.j-link{
-			margin-left: 10px;
-			padding: 0 20px;
-			line-height: 110px;
-		}
-		#footer a.j-link--contato{
+	#footer .atendimento,
+	#footer .atendimento2{
+		padding-top: 30px;
+		padding-left: 10px;
+		width: 200px;
+		height: 90px;
+		font-size: 0.95em;
+	}
+	#footer .atendimento2{
+		width: 170px;
+	}
+	#footer a.j-link{
+		margin-left: 10px;
+		padding: 0 20px;
+		line-height: 110px;
+	}
+	#footer a.j-link--contato{
 			font-size: 12px;
 			font-weight: 700;
 		}
 		#footer a.j-link--contato:hover{
 			background-color: #004EA1;
 		}
-
+		
 		#footer .torneira{
 			margin-right: 25px;
 			width: 229px;
