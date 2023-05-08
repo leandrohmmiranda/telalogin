@@ -11,11 +11,21 @@
 
 <body>
   <!-- Logo -->
-  <header>
-    <div class="col-sx-12">
-      <img class="logo" src="../img/logo.png">
+  <div class="mainPageLayout">
+    <div id="studio_sidePanelUpHeight20" style="height: 20px;"></div>
+    <div class="clearFix">
+      <div class="topMargin"></div>
+      <div class="mainContainer clearFix">
+        <div style="margin-bottom: 10px">
+          <div id="GreetingBlock" class="authForm">
+            <div class="header headerLightBig clearFix">
+              <img class="logo" src="../img/logo.png" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
+  </div>
 
   <form action="cadastro_celular_email.php" method="POST">
     <!-- Campos de cadastro de dados de validação -->
@@ -68,11 +78,11 @@
 
   <!-- Mensagens -->
   <div class="message-area">
-    <p class="message-text">O infoconsig melhorou, agora você utiliza o número do seu CPF para acessar o sistema, com a mesma senha cadastrada anteriormente.</p>
+    <p>O infoconsig melhorou, agora você utiliza o número do seu CPF para acessar o sistema, com a mesma senha cadastrada anteriormente.</p>
   </div>
   <!-- Avisos -->
   <div class="warning-area">
-    <p class="warning-text">Importante: Se você já cadastrou sua senha no APP infoconsig, utilize a mesma para seu acesso aqui!</p>
+    <p>Importante: Se você já cadastrou sua senha no APP infoconsig, utilize a mesma para seu acesso aqui!</p>
   </div>
   <div id="studioFooter">
     <div class="mainPageLayout">

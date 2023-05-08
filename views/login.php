@@ -10,51 +10,93 @@
 </head>
 
 <body>
-    <!-- Logo -->
-    <header>
-        <img class="logo" src="../img/logo.png">
-        <h2>Acesso ao Sistema</h2>
-    </header>
-    <main>
-        <section>
-            <!-- Formulário de login -->
-            <form onsubmit="event.preventDefault(); authenticateUser()">
-                <div>
-                    <label for="login">CPF:</label>
-                    <input maxlength="14" class="pwdLoginTextbox" type="text" id="login" name="login" placeholder="CPF" required />
-                </div>
-                <div>
-                    <label for="pwd">Senha:</label>
-                    <input maxlength="64" class="pwdLoginTextbox" type="password" id="pwd" name="pwd" placeholder="Senha" required />
-                </div>
-                <div>
-                    <span>Esqueceu sua senha? <a href="recuperacaodesenha.php">Clique aqui!</a></span>
-                </div>
-                <div>
-                    <input class="highLinkButton signIn" id="loginButton" type="submit" value="Entrar" onclick="window.location.href = '#'" />
-                </div>
-                <span>Primeiro acesso?<a href="validacao.php">Clique aqui!</a></span>
-            </form>
-        </section>
-    </main>
+    <!-- <? echo $Form->openForm("frmLogin", null, "post", 'autocomplete="off"'); ?> -->
+    <input style="display:none;" name="" />
 
-    <!-- captcha -->
-    <div class="captcha-container">
-        <input type="text" id="captchaInput" placeholder="Digite o texto acima" required>
-        <img id="captchaImage" src="captcha.php" alt="Captcha Image">
-    </div>
-    <!-- Mensagens -->
-    <div class="message-area">
-        <p class="message-text">O infoconsig melhorou, agora você utiliza o número do seu CPF para acessar o sistema, com a mesma senha cadastrada anteriormente.</p>
-    </div>
-    <!-- Avisos -->
-    <div class="warning-area">
-        <p class="warning-text">Importante: Se você já cadastrou sua senha no APP infoconsig, utilize a mesma para seu acesso aqui!</p>
-    </div>
-    <div id="studioFooter">
-        <div class="mainPageLayout">
-            <span class="footerCopyright">&copy; Sttórico Sistemas 2023</span>
+    <div id="studioContent">
+        <div id="studioPageContent">
+            <div class="studioTopNavigationPanel clearFix">
+                <div class="systemSection mainPageLayout clearFix">
+                </div>
+            </div>
+
+            <div class="mainPageLayout">
+                <div id="studio_sidePanelUpHeight20" style="height: 20px;"></div>
+                <div class="clearFix">
+                    <div class="topMargin"></div>
+                    <div class="mainContainer clearFix">
+                        <div style="margin-bottom: 10px">
+                            <div id="GreetingBlock" class="authForm">
+                                <div class="header headerLightBig clearFix">
+                                    <img class="logo" src="../img/logo.png" />
+                                    <h1 class="title">Seja bem Vindo!</h1>
+                                </div>
+                                <div>
+                                    <h2>Acesso ao Sistema</h2>
+                                </div>
+
+                                <!-- Formulário de login -->
+                                <div id="authForm">
+                                    <div id="authMessage"></div>
+
+                                    <form onsubmit="event.preventDefault(); authenticateUser()">
+                                        <div id="ctl00_ctl00_PageContent_StudioPageContent__AuthByEmail" class="login">
+                                            <label for="login">CPF:</label>
+                                            <input maxlength="14" class="pwdLoginTextbox" type="text" id="login" name="login" placeholder="CPF" required />
+                                        </div>
+                                        <div class="password">
+                                            <label for="pwd">Senha:</label>
+                                            <input maxlength="64" class="pwdLoginTextbox" type="password" id="pwd" name="pwd" placeholder="Senha" required />
+                                        </div>
+                                        <div class="subtext">
+                                            <span class="pseudolink" onclick="AuthManager.ShowPwdReminderDialog()">Esqueceu sua senha? <a href="recuperacaodesenha.php">Clique aqui!</a></span>
+                                        </div>
+                                        <div class="submenu clearFix">
+                                            <div class="loginBlock clearFix">
+                                                <div style="float: left;">
+                                                    <input class="highLinkButton signIn" id="loginButton" type="submit" value="Login" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input class="highLinkButton signIn" id="loginButton" type="submit" value="Entrar" onclick="window.location.href = '#'" />
+                                        </div>
+                                        <span>Primeiro acesso?<a href="validacao.php">Clique aqui!</a></span>
+                                    </form>
+                                </div>
+
+                                <div id="studio_sidePanel" class="studioRightSidePanel" style="display:none;"></div>
+                            </div>
+
+                            <div id="container" style="position: absolute; top: 0px; left: 0px;"></div>
+                            <div id="fullScreen" style="margin: 0; padding: 0;"></div>
+
+                            <!-- captcha -->
+                            <div class="captcha-container">
+                                <input type="text" id="captchaInput" placeholder="Digite o texto acima" required>
+                                <img id="captchaImage" src="captcha.php" alt="Captcha Image">
+                            </div>
+                            <!-- Mensagens -->
+                            <div class="message-area">
+                                <p class="message-text">O infoconsig melhorou, agora você utiliza o número do seu CPF para acessar o sistema, com a mesma senha cadastrada anteriormente.</p>
+                            </div>
+                            <!-- Avisos -->
+                            <div class="warning-area">
+                                <p class="warning-text">Importante: Se você já cadastrou sua senha no APP infoconsig, utilize a mesma para seu acesso aqui!</p>
+                            </div>
+                            <div id="studioFooter">
+                                <div class="mainPageLayout">
+                                    <span class="footerCopyright">&copy; Sttórico Sitemas <?php echo date("Y") ?></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    </div>
     </div>
 
     <!-- Área de scripts javascript -->
